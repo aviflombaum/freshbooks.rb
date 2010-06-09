@@ -2,7 +2,7 @@ require 'net/https'
 require 'rexml/document'
 require 'logger'
 
-module FreshBooks
+module Freshbooks
   class Connection
     attr_reader :account_url, :auth_token, :request_headers
     
@@ -70,7 +70,7 @@ module FreshBooks
       connection.use_ssl = true
       connection.verify_mode = OpenSSL::SSL::VERIFY_NONE
       
-      request = Net::HTTP::Post.new(FreshBooks::SERVICE_URL)
+      request = Net::HTTP::Post.new(Freshbooks::SERVICE_URL)
       request.basic_auth @auth_token, 'X'
       request.body = request_body
       request.content_type = 'application/xml'

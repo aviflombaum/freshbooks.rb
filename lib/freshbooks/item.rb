@@ -1,5 +1,5 @@
-module FreshBooks
-  class Item < FreshBooks::Base
+module Freshbooks
+  class Item < Freshbooks::Base
     define_schema do |s|
       s.fixnum :item_id, :quantity, :inventory
       s.float :unit_cost

@@ -1,4 +1,4 @@
-module FreshBooks
+module Freshbooks
   class ListProxy
     include Enumerable
     

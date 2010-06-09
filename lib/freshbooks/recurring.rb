@@ -1,5 +1,5 @@
-module FreshBooks
-  class Recurring < FreshBooks::Base
+module Freshbooks
+  class Recurring < Freshbooks::Base
     define_schema do |s|
       s.string :first_name, :last_name, :organization, :p_street1, :p_street2, :p_city
       s.string :p_state, :p_country, :p_code, :lines, :status, :notes, :terms, :frequency

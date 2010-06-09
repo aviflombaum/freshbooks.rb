@@ -1,4 +1,4 @@
-module FreshBooks
+module Freshbooks
   module XmlSerializer
     class FixnumSerializer
       def self.to_node(member_name, value)
@@ -72,7 +72,7 @@ module FreshBooks
       end
       
       def self.to_value(xml_val)
-        FreshBooks::const_get(xml_val.name.camelize)::new_from_xml(xml_val) 
+        Freshbooks::const_get(xml_val.name.camelize)::new_from_xml(xml_val) 
       end
     end
     
@@ -87,7 +87,7 @@ module FreshBooks
       
       def self.to_value(xml_val)
         xml_val.elements.map { |elem|
-          FreshBooks::const_get(elem.name.camelize)::new_from_xml(elem)
+          Freshbooks::const_get(elem.name.camelize)::new_from_xml(elem)
         }
       end
     end

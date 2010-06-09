@@ -3,7 +3,7 @@ require File.dirname(__FILE__) + '/lib/freshbooks'
 require 'hoe'
 # Generate all the Rake tasks
 # Run 'rake -T' to see list of generated tasks (from gem root directory)
-$hoe = Hoe.new('freshbooks.rb', FreshBooks::VERSION) do |p|
+$hoe = Hoe.new('freshbooks.rb', Freshbooks::VERSION) do |p|
   p.developer('Ben Curren', 'ben@outright.com')
   p.changes              = p.paragraphs_of("History.txt", 0..1).join("\n\n")
   p.rubyforge_name       = p.name # TODO this is default value

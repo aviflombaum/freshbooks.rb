@@ -1,4 +1,4 @@
-module FreshBooks
+module Freshbooks
   module Schema
     class Definition
       attr_reader :members

@@ -1,4 +1,4 @@
-module FreshBooks
+module Freshbooks
   class Response
     attr_accessor :doc
     attr_reader   :raw_response

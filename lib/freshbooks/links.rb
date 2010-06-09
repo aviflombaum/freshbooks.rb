@@ -1,5 +1,5 @@
-module FreshBooks
-  class Links < FreshBooks::Base
+module Freshbooks
+  class Links < Freshbooks::Base
     define_schema do |s|
       s.string :client_view, :view, :edit, :read_only => true
     end

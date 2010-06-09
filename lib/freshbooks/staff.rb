@@ -1,5 +1,5 @@
-module FreshBooks
-  class Staff < FreshBooks::Base
+module Freshbooks
+  class Staff < Freshbooks::Base
     define_schema do |s|
       s.fixnum :staff_id, :number_of_logins
       s.string :username, :first_name, :last_name, :email, :business_phone, :mobile_phone

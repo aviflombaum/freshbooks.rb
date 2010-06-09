@@ -5,4 +5,4 @@
   * Create gem
   * Convert xml to ruby type: date, date_time, boolean
   * Added links to objects
-  * Create DSL to describe FreshBooks actions
+  * Create DSL to describe Freshbooks actions
