@@ -60,7 +60,7 @@ require 'logger'
 #
 #==============================================================================
 module Freshbooks
-  VERSION = '3.0.6.1'     # Gem version
+  VERSION = '1.0.0'     # Gem version
   API_VERSION = '2.1' # Freshbooks API version
   SERVICE_URL = "/api/#{API_VERSION}/xml-in"
 
